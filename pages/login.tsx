@@ -13,14 +13,14 @@ export default function Home() {
 
       <main>
         {!!session && (
-          <a onClick={() => signOut()}>
+          <a href="#" onClick={() => signOut()}>
             <h2>Logout &rarr;</h2>
             <p>Logout from your account</p>
           </a>
         )}
 
         {!session && (
-          <a onClick={() => signIn("zitadel")}>
+          <a href="#" onClick={() => signIn("zitadel")}>
             <h2>Login &rarr;</h2>
             <p>Login with a ZITADEL account</p>
           </a>
